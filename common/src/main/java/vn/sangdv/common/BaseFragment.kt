@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 abstract class BaseFragment : Fragment() {
     abstract fun initView()
     abstract fun layoutView(): Int
-    abstract var mMainActivity:BaseActivity
+     var mMainActivity:BaseActivity = TODO()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,

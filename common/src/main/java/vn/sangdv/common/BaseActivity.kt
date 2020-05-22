@@ -19,7 +19,11 @@ abstract class BaseActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutID())
         onCreateActivity(savedInstanceState)
-
+        if (isOnline()){
+            showToast("Connected")
+        }else{
+            showToast("Disconnected")
+        }
     }
 
 
