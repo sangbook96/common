@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_height_image_footer">@dimen/_12sdp</dimen>
+    <dimen name="width_height_image_footer_land">@dimen/_8sdp</dimen>
+    <dimen name="width_height_background_image_footer">@dimen/_24sdp</dimen>
+    <dimen name="width_height_background_image_footer_land">@dimen/_16sdp</dimen>
+    <dimen name="height_item_footer">@dimen/_36sdp</dimen>
+    <dimen name="width_item_footer">@dimen/_24sdp</dimen>
+    <dimen name="width_item_footer_land">@dimen/_16sdp</dimen>
+    <dimen name="padding_image_footer_small">@dimen/_2sdp</dimen>
+    <dimen name="padding_image_footer_small_land">@dimen/_1sdp</dimen>
+    <dimen name="base_text">@dimen/_4sdp</dimen>
+</resources>

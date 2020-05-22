@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopSlidingTabs">
+        <attr name="tstIndicatorColor" format="color" />  <!-- indicator color -->
+        <attr name="tstIndicatorHeight" format="dimension" />  <!-- indicator height -->
+        <attr name="tstIsShowUnderline" format="boolean" /> <!-- show underline -->
+        <attr name="tstUnderlineColor" format="color" />  <!-- under line color -->
+        <attr name="tstUnderlineHeight" format="dimension" />  <!-- under line height -->
+        <attr name="tstVerticalPadding" format="dimension" />  <!-- padding -->
+        <attr name="tstHorizontalTabMargin" format="dimension" />  <!-- tab margin -->
+        <attr name="tstScrollOffset" format="dimension" />  <!-- scroll offset -->
+        <attr name="tstIsSelectedBold" format="boolean" />  <!-- selected bold -->
+        <attr name="tstIsSelectedCenter" format="boolean" />  <!-- selected center -->
+    </declare-styleable>
+
+    <declare-styleable name="GradientTextView">
+        <attr name="gt_color_list" format="reference"/>
+        <attr name="gt_gradient_direction" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="up" value="1"/>
+            <enum name="right" value="2"/>
+            <enum name="bottom" value="3"/>
+        </attr>
+        <attr name="gt_gradient_angle" format="integer"/>
+    </declare-styleable>
+    <array name="rainbow">
+        <item>@color/base_color_start</item>
+        <item>@color/base_color_end</item>
+    </array>
+</resources>
