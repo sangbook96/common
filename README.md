@@ -73,4 +73,35 @@ Common adapter using recyclerview
         mRecyclerView.adapter = adapter
     }
 ```
+Image Boder
+```xml
+    <vn.sangdv.common.customview.CircleImageView
+        android:id="@+id/mImageAvatar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_avatar"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="4dp" />
+```
+Custom dialog
+```kotlin
+   customDialog.setOnDialogItemClickListener { dialog, view ->
+                when(view.id){
+                    R.id.mBtnNo->{
+                        customDialog.dismiss()
+                    }
+                    R.id.mBtnYes->{
+                        customDialog.dismiss()
+                    }
+                }
+                PreventTwoClick.onClick(view)
+            }
+            customDialog.show()
+           var  mTextDesception = customDialog.views.get(0) as TextView
+            mTextDesception.text = "Test Thông báo!"
+
+        }
+    }
+```
+
 
