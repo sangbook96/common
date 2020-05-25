@@ -5,6 +5,7 @@ import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_test_dialog.*
 import vn.sangdv.common.BaseActivity
 import vn.sangdv.common.customview.CustomDialog
+import vn.sangdv.common.utils.PreventTwoClick
 
 class TestDialogCommon : BaseActivity(){
     override fun getLayoutID(): Int {
@@ -26,6 +27,7 @@ class TestDialogCommon : BaseActivity(){
                         customDialog.dismiss()
                     }
                 }
+                PreventTwoClick.onClick(view)
             }
             customDialog.show()
            var  mTextDesception = customDialog.views.get(0) as TextView
