@@ -47,3 +47,30 @@ class DetailFragment : BaseFragment(){
     }
 }
 ```
+Common adapter using recyclerview
+![image](https://github.com/sangbook96/common/blob/master/screen/test_common_recyclerview.png)
+```kotlin
+     override fun onCreateActivity(savedInstanceState: Bundle?) {
+        mDataList.add("SangDv")
+        mDataList.add("SangDv")
+        mDataList.add("SangDv")
+        mDataList.add("SangDv")
+        mDataList.add("SangDv")
+        mDataList.add("SangDv")
+        mRecyclerView.layoutManager = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        val adapter =
+            object : BaseAdapter<String>(this, mDataList, R.layout.item_test) {
+                override fun onPostBindViewHolder(holder: ViewHolder<*>?, t: String) {
+                    holder!!.setViewText(R.id.mItemTextTitle,t.toString())
+                }
+            }
+        adapter.setOnItemClickListener(object : BaseAdapter.OnItemClickListener {
+            override fun onItemClick(view: View?, position: Int) {
+                Toast.makeText(view!!.context, "Clicked " + (position + 1), Toast.LENGTH_SHORT)
+                    .show()
+            }
+        })
+        mRecyclerView.adapter = adapter
+    }
+```
+
