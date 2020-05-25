@@ -85,6 +85,10 @@ Image Boder
 ```
 Custom dialog
 ```kotlin
+  val customDialog = CustomDialog(
+                this,
+                R.layout.dialog_layout, intArrayOf(R.id.mTextDesception,R.id.mBtnNo,R.id.mBtnYes)
+            )
    customDialog.setOnDialogItemClickListener { dialog, view ->
                 when(view.id){
                     R.id.mBtnNo->{
