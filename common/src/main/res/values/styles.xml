@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Custom_Dialog_Style" parent="@android:style/Theme.Dialog">
+        <!--Window background color is transparent-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--Whether to float on the interface-->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <!--Whether to allow the background to be darkened-> <!-Whether the background is dimly displayed-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!--Is there a title-->
+        <item name="android:windowNoTitle">true</item>
+        <!--Is it translucent-->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <!-- Popup menu animation at the bottom of the dialog -->
+    <style name="bottom_animation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_exit</item>
+    </style>
+</resources>
