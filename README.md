@@ -107,6 +107,10 @@ Custom dialog
         }
     }
 ```
+Custom toast
+```
+CustomToast.iconToast(this,"This is custom icon toast", Toast.LENGTH_LONG, Color.parseColor("#6d4c41"),R.drawable.your_icon_path);
+```
 
 Format vnd 
 ```
