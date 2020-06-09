@@ -9,7 +9,7 @@ allprojects {
 	}
   
   dependencies {
-	        implementation 'com.github.sangbook96:common:1.0.0'
+	        implementation 'com.github.sangbook96:common:version'
 	}
  ```
 
@@ -107,5 +107,11 @@ Custom dialog
         }
     }
 ```
+
+Format vnd 
+```
+mEdtDesiredPrice.addTextChangedListener(MoneyTextWatcher(mEdtDesiredPrice))
+```
+
 
 
